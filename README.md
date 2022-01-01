@@ -10,4 +10,4 @@ The function implemented in 5 languages:
 
 It can analyze only English Latin alphabet, others ignored.
 
-![Screenshot](https://github.com/MehdiKurtcebe/letter-frequency-finder/blob/master/img/screenshot.png)
+![Screenshot](https://github.com/MehdiKurtcebe/letter-frequency-finder/blob/main/img/screenshot.png)
