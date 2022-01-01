@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 	"strings"
 )
 
@@ -31,8 +32,17 @@ func main() {
 	fmt.Println("For the text: \n")
 	fmt.Println(text)
 	fmt.Println("\n----------LETTER FREQUENCIES----------\n")
-	for k, f := range frequencies {
-		fmt.Println(string(k), ": %", f * 100)
+	letters := make([]rune, len(frequencies))
+	i := 0
+	for l, _ := range frequencies {
+		letters[i] = l
+		i++
+	}
+	sort.Slice(letters, func(i, j int) bool {
+		return letters[i] < letters[j]
+	})
+	for _, l := range letters {
+		fmt.Println(string(l), ": %", frequencies[l] * 100)
 	}
 }
 
