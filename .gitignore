@@ -3,3 +3,6 @@
 /java/out
 /java/java.iml
 /go/.idea
+/c/.idea
+/c/cmake-build-debug
+/c/CMakeLists.txt
